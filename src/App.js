@@ -7,7 +7,7 @@ function App() {
   const [buttonPressed, setButtonPressed] = useState(false);
 
   const generateQRCode = () => {
-    const combinedValue = `${input1}-${input2}`;
+    const combinedValue = `${input1}+${input2}`;
     return combinedValue;
   };
 
