@@ -12,7 +12,7 @@ function App() {
   };
 
   const handleGenerateQR = () => {
-    if(input1!=="" || input2!==""){
+    if(input1!=="" && input2!==""){
 
       setButtonPressed(false);
     }
