@@ -7,12 +7,12 @@ function App() {
   const [buttonPressed, setButtonPressed] = useState(false);
 
   const generateQRCode = () => {
-    const combinedValue = `${input1}+${input2}`;
+    const combinedValue = `${input1}-${input2}`;
     return combinedValue;
   };
 
   const handleGenerateQR = () => {
-    if(input1!=="" && input2!==""){
+    if(input1!=="" || input2!==""){
 
       setButtonPressed(false);
     }
@@ -23,7 +23,7 @@ function App() {
       <div>
         <h1 className="mt-5 text-3xl">Qr Generater</h1>
       </div>
-      <div className=" mt-20 items-center align-middle justify-center max-h-screen flex flex-col w-full">
+      <div className=" mt-25 items-center align-middle justify-center max-h-screen flex flex-col w-full">
         <h1>Enter Details</h1>
 <div className="w-full flex flex-col items-center py-7 space-y-10">
 <label
